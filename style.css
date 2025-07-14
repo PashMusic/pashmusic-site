@@ -134,3 +134,38 @@ h1 {
     max-width: 100%;
   }
 }
+
+/* caroussel d'images horizontal*/
+.bandeau-defilant {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  background: #111; /* ou transparent selon ton design */
+  padding: 20px 0;
+}
+
+.bandeau-images {
+  display: inline-block;
+  white-space: nowrap;
+  animation: defilement 20s linear infinite;
+}
+
+.bandeau-images img {
+  height: 80px;
+  margin: 0 20px;
+  vertical-align: middle;
+  filter: grayscale(100%); /* effet stylé optionnel */
+  transition: transform 0.3s;
+}
+
+.bandeau-images img:hover {
+  transform: scale(1.1);
+  filter: grayscale(0%);
+}
+
+/* Animation */
+@keyframes defilement {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
