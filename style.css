@@ -13,8 +13,8 @@ body {
 }
 
 header {
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> /*rendu adpaté au mobile */
   background: var(--bleu-nuit);
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> /* rendu adpaté au mobile mais ça enlève le background*/
   
 }
 
