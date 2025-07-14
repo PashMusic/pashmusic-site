@@ -5,14 +5,17 @@
 }
 
 body {
-  margin: 0;
+  max-width: 900px ;
+  margin: auto; /* centrage*/
   font-family: 'Montserrat', sans-serif;
   background: var(--ivoire);
   color: var(--bleu-nuit);
 }
 
 header {
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> /*rendu adpaté au mobile */
   background: var(--bleu-nuit);
+  
 }
 
 nav ul {
