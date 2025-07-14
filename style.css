@@ -86,6 +86,36 @@ h1 {
   color: var(--rose-cuivre);
 }
 
+
+.double-colonnes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.colonne {
+  flex: 1 1 45%; /* largeur de chaque colonne avec flexibilité */
+  text-align: center;
+}
+
+.colonne img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .double-colonnes {
+    flex-direction: column;
+  }
+
+  .colonne {
+    flex: 1 1 100%;
+  }
+}
+
 /* Responsive */
 @media (max-width: 600px) {
   nav ul {
