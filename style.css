@@ -18,6 +18,10 @@ header {
   
 }
 
+footer {
+  background: var(--bleu-nuit);
+}
+
 nav ul {
   display: flex;
   list-style: none;
