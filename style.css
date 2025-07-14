@@ -116,6 +116,10 @@ h1 {
   }
 }
 
+.centered {
+  text-align: center;
+}
+
 /* Responsive */
 @media (max-width: 600px) {
   nav ul {
